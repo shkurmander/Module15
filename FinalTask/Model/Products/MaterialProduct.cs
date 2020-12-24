@@ -1,14 +1,19 @@
-﻿using System;
+﻿using FinalTask.Constants;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 
 namespace FinalTask.Model
 {
-    class MaterialProduct : Product
+    abstract class MaterialProduct : Product
     {
-        public WeightAbbr  Weight { get; set; }
+        public int Weight { get; set; }
+
+        public WeightUnits  Unit { get; set; }
+
         public double Amt { get; set; }
+
 
     }
 }

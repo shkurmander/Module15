@@ -8,7 +8,7 @@ namespace FinalTask.Model
     {
         public string Id;
 
-        public string Caption { get; set; }
+        public string Name { get; set; }
 
         public string Descripion { get; set; }
 
