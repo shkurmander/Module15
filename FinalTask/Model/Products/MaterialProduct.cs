@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FinalTask.Model.Products
+
+namespace FinalTask.Model
 {
     class MaterialProduct : Product
     {
-        public int MyProperty { get; set; }
+        public WeightAbbr  Weight { get; set; }
         public double Amt { get; set; }
 
     }

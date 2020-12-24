@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FinalTask.Constants
 {
-    enum weights
+    public enum WeightAbbr
     {
         g,
         kg,
