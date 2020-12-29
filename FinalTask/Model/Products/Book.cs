@@ -4,13 +4,31 @@ using System.Text;
 
 namespace FinalTask.Model.Products
 {
+    /// <summary>
+    /// Класс конкретного материального товара "книга"
+    /// </summary>
     class Book : MaterialProduct
     {
-        public string Author { get; set; }
-        public string Publisher { get; set; }
-        public DateTime Year { get; set; }
-        public string Language { get; set; }
-        public string Cover { get; set; }
+        private string Author { get; set; }
+        private string Publisher { get; set; }
+        private int Year { get; set; }
+        private string Language { get; set; }
+        private string Cover { get; set; }
+
+        public Book(string author, 
+                    string publisher,
+                    int year,
+                    string language,
+                    string cover,
+                    )
+        {
+            Author = author;
+            Publisher = publisher;
+            Year = year;
+            Language = language;
+            Cover = cover;
+
+        }                
 
     }
 }

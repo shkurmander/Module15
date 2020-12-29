@@ -7,9 +7,9 @@ namespace FinalTask.Model.Products
 {
     abstract class DigitalProduct : Product
     {
-        public int Size { get; set; }
-        public InformationUnits InfoUnit { get; set; }
+        private int Size { get; set; }
+        private InformationUnits InfoUnit { get; set; }
 
-        public string Link { get; set; }
+        private string Link { get; set; }
     }
 }

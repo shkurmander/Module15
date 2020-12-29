@@ -6,6 +6,9 @@ using System.Text;
 
 namespace FinalTask.Model
 {
+    /// <summary>
+    /// Абстрактный класс материального продукта
+    /// </summary>
     abstract class MaterialProduct : Product
     {
         public int Weight { get; set; }

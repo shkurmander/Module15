@@ -4,7 +4,10 @@ using System.Text;
 
 namespace FinalTask.Model
 {
-    class HomeDelivery : Delivery
+    /// <summary>
+    /// Класс Даставка до квартиры
+    /// </summary>
+    class HomeDelivery : Delivery 
     {
         public HomeDelivery(string address)
         {

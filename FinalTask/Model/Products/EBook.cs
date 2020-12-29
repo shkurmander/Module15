@@ -4,6 +4,9 @@ using System.Text;
 
 namespace FinalTask.Model.Products
 {
+    /// <summary>
+    /// Класс конкретного товара "электронная книга"
+    /// </summary>
     class EBook : DigitalProduct
     {
         public string Author { get; set; }
