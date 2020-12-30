@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using FinalTask.Constants;
 
 namespace FinalTask.Model.Products
 {
     /// <summary>
-    /// Класс конкретного материального товара "книга"
+    /// Класс конкретного материального товара "Книга"
     /// </summary>
     class Book : MaterialProduct
     {
@@ -15,13 +16,26 @@ namespace FinalTask.Model.Products
         private string Language { get; set; }
         private string Cover { get; set; }
 
-        public Book(string author, 
+        public Book(string id,
+                    string name,
+                    string description,
+                    decimal price,
+                    int weight,
+                    WeightUnits unit,
+                    double amt,
+                    string author,
                     string publisher,
                     int year,
                     string language,
-                    string cover,
-                    )
+                    string cover)
         {
+            Id = id;
+            Name = name;
+            Descripion = description;
+            Price = price;
+            Weight = weight;
+            Unit = unit;
+            Amt = amt;
             Author = author;
             Publisher = publisher;
             Year = year;

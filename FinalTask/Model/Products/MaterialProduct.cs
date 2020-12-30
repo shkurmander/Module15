@@ -11,12 +11,11 @@ namespace FinalTask.Model
     /// </summary>
     abstract class MaterialProduct : Product
     {
-        public int Weight { get; set; }
+        protected int Weight { get; set; }
 
-        public WeightUnits  Unit { get; set; }
+        protected WeightUnits  Unit { get; set; }
 
-        public double Amt { get; set; }
-
-
+        protected double Amt { get; set; }
+       
     }
 }

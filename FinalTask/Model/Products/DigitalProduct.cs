@@ -5,11 +5,14 @@ using System.Text;
 
 namespace FinalTask.Model.Products
 {
+    /// <summary>
+    /// Абстрактный класс цифрового товара
+    /// </summary>
     abstract class DigitalProduct : Product
     {
-        private int Size { get; set; }
-        private InformationUnits InfoUnit { get; set; }
+        protected int Size { get; set; }
+        protected InformationUnits InfoUnit { get; set; }
 
-        private string Link { get; set; }
+        protected string Link { get; set; }
     }
 }

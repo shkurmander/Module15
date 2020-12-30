@@ -4,15 +4,18 @@ using System.Text;
 
 namespace FinalTask.Model
 {
+    /// <summary>
+    /// Корневой абстрактный класс товара
+    /// </summary>
     abstract class Product
     {
-        public string Id;
+        protected string Id;
 
-        public string Name { get; set; }
+        protected string Name { get; set; }
 
-        public string Descripion { get; set; }
+        protected string Descripion { get; set; }
 
-        public decimal Price { get; set; }
-
+        protected decimal Price { get; set; }
+      
     }
 }

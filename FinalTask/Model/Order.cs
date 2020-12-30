@@ -27,7 +27,9 @@ namespace FinalTask.Model
         public List<OrderState> State { get; set; }
 
         // Конструктор заказа
-        public Order(Customer customer, ArrayList positions, Calculation calculation)
+        public Order(Customer customer,
+                     ArrayList positions,
+                     Calculation calculation)
         {
             Number = Globals.GetCounter() + DateTime.Now.Year.ToString();       //Без использования БД или файлов, не придумал как организовать
             Globals.IncreaseCounter();                                          //счетчик, кроме как через глобальную переменную

@@ -20,7 +20,7 @@ namespace FinalTask.Model
         {
             Product = product;
             Amount = amount;
-        }
+        }        
     }
     
  
