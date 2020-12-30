@@ -14,17 +14,17 @@ namespace FinalTask.Model
     /// </typeparam>
     public class Order<TDelivery> where TDelivery : Delivery
     {
-        private string Number { get; set; }
+        public string Number { get; set; }
 
-        private Customer Customer { get; set; }
+        public Customer Customer { get; set; }
 
-        private ArrayList PositionsList { get; set; }
+        public ArrayList PositionsList { get; set; }
 
-        private TDelivery Delivery { get; set; }
+        public TDelivery Delivery { get; set; }
 
-        private Calculation Calculation { get; set; }
+        public Calculation Calculation { get; set; }
 
-        private List<OrderState> State { get; set; }
+        public List<OrderState> State { get; set; }
 
         // Конструктор заказа
         internal Order(Customer customer,
@@ -43,5 +43,6 @@ namespace FinalTask.Model
             State.Add(new OrderState(CurrentOrderState.Created));   //Добавляем запись о создании заказа
 
         }
+        
     }
 }

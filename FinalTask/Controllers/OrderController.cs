@@ -78,5 +78,12 @@ namespace FinalTask
         {
             return new Calculation(2149);
         }
+
+        public static void PrintOrder(Order<Delivery> order)
+        {
+            Console.WriteLine($"Номер заказа: {order.Number}");
+            Console.WriteLine($"Покупатель: {order.Customer.");
+
+        }
     }
 }
