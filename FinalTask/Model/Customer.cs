@@ -7,7 +7,7 @@ namespace FinalTask.Model
     /// <summary>
     /// Класс покупателя
     /// </summary>
-    class Customer
+    public class Customer
     {
         private string Name { get; set; }
         private string Surname { get; set; }

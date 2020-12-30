@@ -7,7 +7,7 @@ namespace FinalTask.Model
     /// <summary>
     /// Родительский абстрактный класс доставки
     /// </summary>
-    abstract class Delivery
+    public abstract class Delivery
     {
         public string Address;
 

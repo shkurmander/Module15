@@ -7,7 +7,7 @@ namespace FinalTask.Model
     /// <summary>
     /// Корневой абстрактный класс товара
     /// </summary>
-    abstract class Product
+    public abstract class Product
     {
         protected string Id;
 

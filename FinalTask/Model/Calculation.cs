@@ -8,11 +8,17 @@ namespace FinalTask.Model
     /// <summary>
     /// Класс расчетов(чек по заказу)
     /// </summary>
-    class Calculation
+    public class Calculation
     {
-        private int Sum { get; set; }
-        private ArrayList PositionList { get; set; }
+        private double Sum { get; set; }
+        //private ArrayList PositionList { get; set; }
         //здесь можно разместить еще необходимые 
         //данные по расчетам, которые включить в чек
+        //клнструктор просто "затычка" не хочется расписывать, т.к. сюда надо загонять список позиций для расчетов
+
+        public Calculation (double sum)
+        {
+            Sum = sum;
+        }
     }
 }

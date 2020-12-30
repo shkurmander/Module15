@@ -7,7 +7,7 @@ namespace FinalTask.Model
     /// <summary>
     /// Класс доставки до магазина
     /// </summary>
-    class ShopDelivery : Delivery
+    public class ShopDelivery : Delivery
     {
         public ShopDelivery(string address)
         {

@@ -7,12 +7,13 @@ namespace FinalTask.Model
     /// <summary>
     /// Класс Даставка до квартиры
     /// </summary>
-    class HomeDelivery : Delivery 
+    public class HomeDelivery : Delivery 
     {
         public HomeDelivery(string address)
         {
             Address = address;
         }
+
         public override void  SendOrder()
         {
             Console.WriteLine($"Доставка до квартиры по адресу:{Address}");

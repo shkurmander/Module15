@@ -12,22 +12,22 @@ namespace FinalTask.Model
     /// <typeparam name="TDelivery">
     /// Тип доставки
     /// </typeparam>
-    class Order<TDelivery> where TDelivery : new()
+    public class Order<TDelivery> where TDelivery : Delivery
     {
-        public string Number { get; set; }
+        private string Number { get; set; }
 
-        public Customer Customer { get; set; }
+        private Customer Customer { get; set; }
 
-        public ArrayList PositionsList { get; set; }
+        private ArrayList PositionsList { get; set; }
 
-        public TDelivery Delivery { get; set; }
+        private TDelivery Delivery { get; set; }
 
-        public Calculation Calculation { get; set; }
+        private Calculation Calculation { get; set; }
 
-        public List<OrderState> State { get; set; }
+        private List<OrderState> State { get; set; }
 
         // Конструктор заказа
-        public Order(Customer customer,
+        internal Order(Customer customer,
                      ArrayList positions,
                      Calculation calculation)
         {
@@ -36,7 +36,7 @@ namespace FinalTask.Model
            
             Customer = customer;
             PositionsList = positions;
-            TDelivery Delivery = new TDelivery();                   
+            var Delivery = new HomeDelivery("г.Барнаул, пр-т Ленина 26");                   
            
             Calculation = calculation;                              
             State = new List<OrderState>();                           //создаем лист статусов заказа

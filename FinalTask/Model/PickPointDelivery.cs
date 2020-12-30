@@ -7,7 +7,7 @@ namespace FinalTask.Model
     /// <summary>
     /// Класс доставки до точки выдачи
     /// </summary>
-    class PickPointDelivery : Delivery
+    public class PickPointDelivery : Delivery
     {
         public PickPointDelivery(string address)
         {
