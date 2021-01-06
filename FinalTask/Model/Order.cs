@@ -36,8 +36,8 @@ namespace FinalTask.Model
             Globals.IncreaseCounter();                                          //счетчик, кроме как через глобальную переменную
            
             Customer = customer;
-            PositionsList = positions;                            
-           
+            PositionsList = positions;
+            Delivering = delivering;
             Calculation = calculation;                              
             State = new List<OrderState>();                           //создаем лист статусов заказа
             State.Add(new OrderState(CurrentOrderState.Created));   //Добавляем запись о создании заказа
