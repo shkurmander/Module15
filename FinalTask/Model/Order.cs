@@ -20,28 +20,31 @@ namespace FinalTask.Model
 
         public ArrayList PositionsList { get; set; }
 
-        public TDelivery Delivery { get; set; }
+        public TDelivery Delivering { get; set; }
 
         public Calculation Calculation { get; set; }
 
         public List<OrderState> State { get; set; }
 
         // Конструктор заказа
-        internal Order(Customer customer,
+        public Order(Customer customer,
                      ArrayList positions,
-                     Calculation calculation)
+                     Calculation calculation,
+                     TDelivery delivering)
         {
             Number = Globals.GetCounter() + DateTime.Now.Year.ToString();       //Без использования БД или файлов, не придумал как организовать
             Globals.IncreaseCounter();                                          //счетчик, кроме как через глобальную переменную
            
             Customer = customer;
-            PositionsList = positions;
-            var Delivery = new HomeDelivery("г.Барнаул, пр-т Ленина 26");                   
+            PositionsList = positions;                            
            
             Calculation = calculation;                              
             State = new List<OrderState>();                           //создаем лист статусов заказа
             State.Add(new OrderState(CurrentOrderState.Created));   //Добавляем запись о создании заказа
-
+        }
+        public void ChangeState(OrderState orderState)
+        {
+            State.Add(orderState);
         }
         
     }

@@ -9,9 +9,13 @@ namespace FinalTask
 {
     public static class OrderController
     {
-        public static void NewOrder() 
+        public static Order<Delivery>  NewOrder() 
         {
-            var order1 = new Order<HomeDelivery>(GetCustomer(), GetPositionsList(), GetCalculation());
+           return new Order<Delivery>(GetCustomer(), 
+                                      GetPositionsList(), 
+                                      GetCalculation(),
+                                      new HomeDelivery("г.Барнаул, пр-т Ленинаб 63"));
+
         }
         //Метод возвращающий объект покупателя
         public static Customer GetCustomer()
@@ -79,11 +83,13 @@ namespace FinalTask
             return new Calculation(2149);
         }
 
-        public static void PrintOrder(Order<Delivery> order)
+
+        // пока не стал писать печать, т.к. вылазят конфликты по модификаторам доступа
+       /* public static void PrintOrder(Order<Delivery> order)
         {
             Console.WriteLine($"Номер заказа: {order.Number}");
             Console.WriteLine($"Покупатель: {order.Customer.");
 
-        }
+        }*/
     }
 }

@@ -10,7 +10,7 @@ namespace FinalTask.Model
     /// Класс Статуса заказа - Статус + Таймстамп
     /// При рефакторинге, скорее всего выкинул бы этот класс и сделал бы таймстамп напрямую без него
     /// </summary>
-    class OrderState
+    public class OrderState
     {
         private CurrentOrderState State ;
         private DateTime TimeStamp;
